@@ -55,7 +55,7 @@ app.use (function(req,res){
 
 //creating and running the server
 
-http.createServer(app).listen(3000, function() {
+http.createServer(app).listen(process.env.PORT, function() {
 	console.log("Guestbook started at port 3000");
 });
 
